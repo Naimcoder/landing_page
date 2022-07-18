@@ -1,3 +1,5 @@
+/* fonts start */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@500&family=Roboto&display=swap');
 /*--------------------
  all common part css start
  ---------------------*/
@@ -340,7 +342,17 @@ player part css end
      .players {
           grid-template-columns: repeat(1, 1fr);
      }
-
+                       .players,
+                       .blog,
+                       .courses {
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column
+                       }
+          
+                       .blog_info h3 {
+                            text-align: justify;
+                       }
      .top-player-title {
           text-align: center;
      }
@@ -352,7 +364,9 @@ player part css end
      .blogs {
           grid-template-columns: repeat(1, 1fr);
      }
-
+            .blog {
+                 flex-direction: column;
+            }
    
 
      .courses {
@@ -399,6 +413,10 @@ player part css end
           .course_info h3 {
                font-size: 24px;
           }
+           .players,.blogs,.courses {
+                   justify-content: center;
+                   align-items: center;
+                            }
 }
 /*-----------------------
  tablate responsive part end
@@ -408,17 +426,17 @@ player part css end
 /*-----------------------
 destop responsive part start
 ---------------------------*/
-@media only screen and (min-width:992px) and (max-width: 1312px) {
+@media only screen and (min-width:992px) and (max-width: 1400px) {
      .container {
           width: 100%;
      }
-
+     
      .players {
           grid-template-columns: repeat(3, 1fr);
      }
 
      .blogs {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
      }
 
      .courses {

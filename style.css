@@ -225,11 +225,9 @@ player part css end
 
 }
 
-.course_img img {
-     width: 224px;
-     height: 104px;
-     text-align: center;
-     justify-items: center;
+.course_img img{
+   width: 100%;
+   margin: 0 auto;
 }
 
 .course_update_title {
@@ -370,9 +368,12 @@ player part css end
    
 
      .courses {
-          grid-template-columns: repeat(1, 1fr);
+          /* grid-template-columns: repeat(1, 1fr); */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+         align-items: center;
      }
-
      .course_info h3 {
           font-size: 24px;
      }
